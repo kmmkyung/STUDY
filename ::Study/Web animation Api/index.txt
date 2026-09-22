@@ -1,9 +1,0 @@
-Web animation api
-
-상대적으로 자유로운 제어가 어려웠던 css애니메이션을 자바스크립트의 힘을 빌려 더 강력하게 바꿔준다
-css애니메이션을 기반으로 하기 때문에 css애니메이션의 장점은 그대로 살리고 업그레이드 해주는 느낌으로 생각할 것
- ->Web animation api
-css애니메이션의 구현을 기반으로 설계된 API로, 자바스크립트로 css 애니메이션을 제어할 수 있다.
-외부 라이브러리가 아닌 웹 표준 기술이다 
-
-transitions start/end/run/cancel<- cancel: 객체가 없어지거나 취소되면
