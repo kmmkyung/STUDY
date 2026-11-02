@@ -1,0 +1,25 @@
+/* File */
+.csAttach td.fileInfo .attachSelect { cursor:pointer; line-height:1; }
+.csAttach td.fileInfo .ec-base-help { margin:10px 0 0; }
+.csAttach .attachCount { margin:0 0 0 8px; color:#6d6d6d; font-size:12px; }
+
+/* Preview */
+.csAttach td.fileInfo .attachList { margin:0; }
+.csAttach td.fileInfo .attachList:after { content:''; display:block; clear:both; }
+.csAttach td.fileInfo .attachList li { position:relative; float:left; margin:6px 8px 8px 0; }
+.csAttach td.fileInfo .attachList li img { width:80px; height:80px; border:1px solid #ddd; box-sizing:border-box; object-fit:cover; }
+.csAttach td.fileInfo .attachList .btnAttachDelete { position:absolute; top:0; right:0; width:22px; height:22px; border:1px solid #ccc; box-sizing:border-box; font-size:0; line-height:0; cursor:pointer; background:#fff url("//img.echosting.cafe24.com/skin/skin/product/ico_product_delete.svg") no-repeat center center; background-size:14px 14px; }
+
+/* History */
+.csAttachHistory:after { content:''; display:block; clear:both; }
+.csAttachHistory li { float:left; margin:0 8px 8px 0; }
+.csAttachHistory li img { width:80px; height:80px; border:1px solid #ddd; box-sizing:border-box; object-fit:cover; }
+.csAttachHistory + .ec-base-help { margin:2px 0 0; }
+
+/* Popup */
+.csArea.csAttach .csAttachHistory,
+.boardViewCS.csAttach .csAttachHistory { padding:10px 20px 0; }
+.csArea.csAttach .csAttachHistory + .ec-base-help,
+.boardViewCS.csAttach .csAttachHistory + .ec-base-help { margin:2px 20px 12px; }
+.csDetail .content .csArea.csAttach .csAttachHistory { padding:10px 0 0; }
+.csDetail .content .csArea.csAttach .csAttachHistory + .ec-base-help { margin:2px 0 0; }

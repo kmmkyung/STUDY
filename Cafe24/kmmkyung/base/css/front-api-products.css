@@ -1,0 +1,113 @@
+/**
+ * 메인 시그니처 섹션 (base/js/front-api-products.js)
+ *    왼쪽: 배경 이미지 + 타이틀 / 오른쪽: 카페24 메인진열 모듈 상품 2x2 (구분선 있는 카드)
+ *
+ * @format
+ */
+
+.sec__signature {
+  --signature-line: #d9d7d0;
+  background: #f4f3ef;
+}
+
+/* 왼쪽 이미지 영역 */
+.sec__signature .content__thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+  background: #d9d6cf var(--signature-image) center / cover no-repeat;
+}
+.sec__signature .content__title {
+  margin: 0 0 16px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: inherit;
+}
+.sec__signature .dp-btn__moreview {
+  color: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 카페24 기본 .prdList(inline-block, 음수 마진)를 2열 그리드로 덮어쓴다 */
+.sec__signature .ec-base-product {
+  margin: 0;
+}
+.sec__signature .ec-base-product .prdList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+.sec__signature .ec-base-product .prdList > li {
+  display: block;
+  margin: 0;
+  padding: 0 0 20px;
+}
+.sec__signature .ec-base-product .prdList > li:nth-child(even) {
+  border-left: 1px solid var(--signature-line);
+}
+.sec__signature .ec-base-product .prdList > li:nth-child(n + 3) {
+  border-top: 1px solid var(--signature-line);
+}
+.sec__signature .ec-base-product .prdList .prdList__item {
+  margin: 0 15px;
+}
+
+/* 상품 이미지: 기본은 전체가 보이게(contain), 호버 이미지는 영역을 꽉 채움(cover) */
+.sec__signature .ec-base-product .prdList .thumbnail > a {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+.sec__signature .ec-base-product .prdList .thumbnail > a img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sec__signature .ec-base-product .prdList .thumbnail > a .thumb__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.sec__signature .ec-base-product .prdList > li:hover .thumb__hover {
+  opacity: 1;
+}
+
+/* 상품명, 가격 */
+.sec__signature .ec-base-product .prdList .description {
+  margin: 16px 0 0;
+}
+.sec__signature .ec-base-product .prdList .description .name a {
+  font-size: 13px;
+}
+
+@media (min-width: 768px) {
+  .sec__signature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .sec__signature .content__thumb {
+    min-height: 0;
+    padding: 0;
+  }
+  .sec__signature .content__title {
+    font-size: 32px;
+  }
+  .sec__signature .ec-base-product .prdList .prdList__item {
+    margin: 0 20px;
+  }
+}

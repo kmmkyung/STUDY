@@ -1,0 +1,4 @@
+# SFTP 접속 정보(비밀번호 포함)는 올리지 않는다
+.vscode/sftp.json
+.DS_Store
+Thumbs.db

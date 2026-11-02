@@ -1,0 +1,47 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-1lm7yv5-1">
+    <!--@css(/layout/basic/css/slideMenu.css)-->
+	<!--@js(/layout/basic/js/slide_menu.js)-->
+	<div class="navigation_member">
+		<div class="side_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}" data-ez-eb="https://ecimg.cafe24img.com/pg3543b11775154023/kmmkyung/web/upload/ezst/shop1/ez-logo-top.edibotbanner.json"></a></div>
+
+		<div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
+			<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+			<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+			<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+			<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+			<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+			<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+			<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+		</div><!-- //navigation_state -->
+	</div><!-- //navigation_member -->
+
+    <nav class="navigation-menu" role="navigation">
+		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
+  <ul id="slide_add_category"><li><a href="/category/%EC%BB%A4%ED%94%BC/24/" class="view">커피</a><ul class="sub_cate01"><li><a href="/category/%EC%95%84%EB%A9%94%EB%A6%AC%EC%B9%B4%EB%85%B8/29/" class="view">아메리카노</a></li><li><a href="/category/%EB%9D%BC%EB%96%BC/30/" class="view">라떼</a></li><li><a href="/category/%EA%B8%B0%ED%83%80/31/" class="view">기타</a></li><li><a href="/category/%EB%94%94%EC%B9%B4%ED%8E%98%EC%9D%B8/46/" class="view">디카페인</a></li></ul></li><li><a href="/category/%ED%8B%B0%EC%97%90%EC%9D%B4%EB%93%9C/25/" class="view">티에이드</a></li><li><a href="/category/%EB%85%BC%EC%BB%A4%ED%94%BC/26/" class="view">논커피</a></li><li><a href="/category/%ED%91%B8%EB%93%9C/43/" class="view">푸드</a></li></ul>
+  </div></div><!-- //menu-side/1 -->
+
+		<div class="cboth slide_line"></div>
+
+        <div module="Layout_BoardInfo" class="navigation-menu__board">
+			<div class="title">고객센터<button type="button" class="icoCategory">펼침</button></div>
+            <ul class="categoryList">
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+            </ul>
+        </div><!-- //navigation-menu__board -->
+
+		<div module="Layout_multishopList">
+			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowBottom"></i></button>
+			<ul module="Layout_multishopListitem">
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+</aside>
+<!--#ez="1/4"-->
