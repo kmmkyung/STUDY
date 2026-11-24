@@ -1,0 +1,5 @@
+# 맥 Finder 설정 파일
+.DS_Store
+
+# 의존성 (npm install로 다시 만들 수 있음)
+node_modules
