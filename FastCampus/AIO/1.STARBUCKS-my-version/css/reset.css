@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* 기본 초기화 */
+html, body, h1, h2, h3, h4, h5, p, ul, ol, button, form, input, address{
+    margin: 0;
+    padding: 0;
+}
+
+/* body{
+    overflow-x: hidden;
+} */
+
+/* 리스트 초기화 */
+ul, ol{
+    list-style: none;
+}
+
+/* root font */
+html{
+    font-size: 10px;
+}
+
+/* a */
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* IR */
+.ir{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+button{
+    border: none;
+    background: transparent;
+}
+
+input:focus, button:focus{
+    /* border: none; */
+    outline: none;
+}
