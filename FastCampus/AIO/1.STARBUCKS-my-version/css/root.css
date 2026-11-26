@@ -1,0 +1,136 @@
+* {
+  /* outline: 1px dotted turquoise; */
+  /* outline: 1px dotted tomato; */
+}
+
+:root {
+  /* COLOR */
+  --black: #000000;
+  --white: #ffffff;
+  --lightgray: #cccccc;
+  --gray: #656565;
+  --darkgray: #333333;
+  --menufont: #669900;
+  --menubg:#2c2a29;
+  --beige:#f6f5ef;
+  --darkgreen:#1e3932;
+  --green:#00704a;
+  --gold:#b68341;
+  /* FONTSIZE */
+  --font-size-S: 1.2rem;
+  --font-size-M: 1.4rem;
+  --font-size-L: 1.8rem;
+  --font-size-Title: 2.4rem;
+}
+/*----------*/
+/*-- CSS CLASS --*/
+.-hidden {
+  display: none !important; 
+}
+
+.-show {
+  display: block;
+}
+
+.-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.-opacity {
+  opacity: 0;
+}
+
+.-fixed{
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+/*----- CSS -----*/
+.btn{
+  font-size: var(--font-size-S);
+  padding: 10px;
+  width: 100px;
+  border-radius: 4px;
+  transition: all .4s;
+  text-align: center;
+}
+
+.btn:hover{
+  text-decoration: underline;
+}
+
+.btn-green{
+  background-color: var(--green);
+  border: 2px solid var(--green);
+  color: var(--white);
+}
+
+
+.btn-darkgreen{
+  border: 2px solid var(--darkgreen);
+  color: var(--darkgreen);
+}
+
+.btn-darkgreen:hover{
+  background-color: var(--darkgreen);
+  color: var(--white);
+}
+
+.btn-white{
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.btn-white:hover{
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn-gold{
+  border: 2px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn-gold:hover{
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+.btn-black{
+  border: 2px solid var(--black);
+  color: black;
+}
+
+.btn-black:hover{
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-transparent{
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.entry-left{
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all 4s;
+}
+
+.entry-left.show{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.entry-right{
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 4s;
+}
+
+.entry-right.show{
+  transform: translateX(0%);
+  opacity: 1;
+}
